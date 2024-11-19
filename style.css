@@ -511,8 +511,8 @@ header .icons #menu{
 .footer .box-container{
     padding-left: 2rem;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10rem;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 2rem;
 }
 
 .footer .box-container .box{
@@ -622,6 +622,13 @@ header .icons #menu{
 
     .footer{
         margin: 3rem;
+    }
+
+    .footer .box-container{
+        padding-left: 2rem;
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        gap: 2rem;
     }
 
     .footer .box-container .box{
