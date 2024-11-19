@@ -35,6 +35,7 @@ body{
 
 section{
     margin-bottom: 2rem;
+    border-radius: 2rem;
 }
 
 
@@ -43,7 +44,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #94c2dc;
+    background: #FFB6C1;
     text-align: center;
     font-size: 2.5rem;
     font-weight: bolder; 
@@ -52,7 +53,7 @@ section{
 }
 
 .heading h1{
-    color: #fff;
+    color: #000000;
     margin: 0;
 }
 
@@ -98,7 +99,7 @@ header .navbar a{
 }
 
 header .navbar a.active, header .navbar a:hover{
-    background: #94c2dc;
+    background: #FFB6C1;
 }
 
 header .icons i, header .icons a{
@@ -109,13 +110,13 @@ header .icons i, header .icons a{
     text-align: center;
     font-size: 1.7rem;color:var(--black);
     border-radius: 50%;
-    background: #eee;
+    background: #d4e9c5;
     text-decoration: none;
 }
 
 header .icons i:hover, header .icons a:hover{
     color: black;
-    background: #94c2dc;
+    background: #F4E7E1;
     transform: rotate(360deg);
 }
 
@@ -128,7 +129,7 @@ header .icons #menu{
 /* home section */
 .home {
     position: relative;
-    background: url("https://images.unsplash.com/photo-1489537235181-fc05daed5805?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGZsb3dlciUyMGJhY2tncm91bmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60") no-repeat;
+    background: url("background.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -136,9 +137,13 @@ header .icons #menu{
 }
 
 .home .content{
+    padding: 3rem;
+    background-color:rgb(255, 255, 255, 0.85);
     position: absolute;
-    top: 20rem;
-    left: 8rem;
+    margin: 20rem 8rem;
+    border-radius: 2rem;
+    text-align: center;
+    align-items: center;
 }
 
 .home .content h1{
@@ -150,6 +155,7 @@ header .icons #menu{
 
 .home .content h3{
     color: rgb(252, 120, 120);
+    font-weight: 600;
     font-size: 3rem;
     margin:0;
     text-transform: capitalize;
@@ -158,11 +164,23 @@ header .icons #menu{
 }
 
 .home .content p{
-    color: rgb(97, 97, 97);
+    color: rgb(0, 0, 0);
     font-size: 1.5rem;
     margin:0;
-    width: 35%;
     margin-bottom: 1rem;
+}
+
+.home .content .btn{
+    background: #d4e9c5;
+    color:#000;
+    font-weight: 700;
+    padding: 0.5rem 3.5rem;
+}
+
+.home .content .btn:hover{
+    background: #F4E7E1;
+    color:#000;
+    font-weight: 700;
 }
 
 /* about section */
@@ -172,7 +190,7 @@ header .icons #menu{
     left: 10%;
     right: 10%;
     border: .1rem solid rgba(0,0,0,0.1);
-    background:#eee;
+    background:rgb(244, 231, 225, 0.4);
 }
 
 .about .row{
@@ -191,12 +209,13 @@ header .icons #menu{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 2rem;
 }
 
 .about .row .image p{
     width: 100%;
-    background: #fff;
-    border: .1 solid rgba(0,0,0,0.1);
+    background: rgb(244, 231, 225, 0.8);
+    border: .1 solid rgba(0, 0, 0);
     text-align: center;
     font-size:3rem;
     font-weight: bold;
@@ -219,9 +238,21 @@ header .icons #menu{
     font-size: 1.5rem;
     margin: 0;
     margin-top: 1rem;
-    color: rgb(97, 97, 97);
+    color: rgb(0, 0, 0);
     line-height: 2;
     margin-bottom: 1rem;
+}
+
+.about .row .content .btn{
+    background: #d4e9c5;
+    color:#000;
+    font-weight: 700;
+}
+
+.about .row .content .btn:hover{
+    background: #786a64;
+    color:#ffffff;
+    font-weight: 700;
 }
 
 
@@ -232,7 +263,7 @@ header .icons #menu{
     left: 10%;
     right: 10%;
     border: .1rem solid rgba(0,0,0,0.1);
-    background:#eee;
+    background:rgb(244, 231, 225, 0.4);
 }
 
 .products .box-container{
@@ -284,7 +315,7 @@ header .icons #menu{
     font-size:1rem;
     color: black;
     z-index: 1000;
-    background: #94c2dc;
+    background: #d4e9c5;
     border-radius:.1rem;
     padding: .3rem;
 }
@@ -313,16 +344,16 @@ header .icons #menu{
 }
 
 .products .box-container .box .image .icons .btn{
-    background: white;
+    background: #F4E7E1;
     color: black;
 }
 
 .products .box-container .box .image .icons .btn:hover{
-    background: #94c2dc;
+    background: #d4e9c5;
 }
 
 .products .box-container .box .image .icons i:hover{
-    color: #94c2dc;
+    color: #d4e9c5;
 }
 
 .products .box-container .box .content{
@@ -330,7 +361,7 @@ header .icons #menu{
 }
 
 .products .box-container .box .content h4{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -419,7 +450,7 @@ header .icons #menu{
     left: 10%;
     right: 10%;
     border: .1rem solid rgba(0,0,0,0.1);
-    background:#eee;
+    background:rgb(244, 231, 225, 0.4);
 }
 
 .contact .row{
@@ -432,8 +463,8 @@ header .icons #menu{
 
 .contact .row .form{
     border: .1rem solid rgba(0,0,0,0.1);
-    border-radius: .5rem;
-    background : #fff;
+    border-radius: 2rem;
+    background : rgb(255, 255, 255, 0.4);
     flex: 1 1 45%;
     padding: 2rem;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0,0, .1);;
@@ -456,6 +487,10 @@ header .icons #menu{
     margin-bottom: 1rem;
 }
 
+.contact .row .form .form-group .btnSubmit{
+    background: #d4e9c5;
+}
+
 
 
 .contact .row .image{
@@ -465,6 +500,7 @@ header .icons #menu{
 .contact .row .image img{
     min-height: 42rem;
     width: 100%;
+    border-radius: 2rem;
 }
 
 .footer{
@@ -473,9 +509,10 @@ header .icons #menu{
 }
 
 .footer .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    padding-left: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10rem;
 }
 
 .footer .box-container .box{
@@ -494,6 +531,7 @@ header .icons #menu{
 .footer .box-container .box .link{
     display: flex;
     flex-direction: column;
+    
 }
 
 .footer .box-container .box .link a{
@@ -501,28 +539,12 @@ header .icons #menu{
     text-decoration: none;
     text-transform: capitalize;
     line-height: 2;
+    text-decoration: none;
+    color: #000;
 }
-
-.footer .credit {
-    text-align: center;
-    font-size: 2rem;
-    text-transform: capitalize;
-    padding-top: 1.5rem;
-    border-top: .1rem solid rgba(0, 0, 0, 0.2);
+.footer .box img{
+    width: 20rem;
 }
-
-.footer .credit span{
-    color: #94c2dc;
-}
-
-
-
-
-
-
-
-
-
 
 
 
