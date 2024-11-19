@@ -271,6 +271,7 @@ header .icons #menu{
 .products .box-container .box .image img{
     position: relative;
     width: 100%;
+    height: 40rem;
     border-top-left-radius:.5rem;
     border-top-right-radius:.5rem;
 
@@ -305,6 +306,10 @@ header .icons #menu{
 .products .box-container .box .image .icons i{
     font-size: 2.5rem;
     color: white;
+}
+
+.products .box-container .box .image .icons a{
+    text-decoration: none;
 }
 
 .products .box-container .box .image .icons .btn{
