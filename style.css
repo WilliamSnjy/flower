@@ -624,15 +624,12 @@ header .icons #menu{
         margin: 3rem;
     }
 
-    .footer .box-container{
-        padding-left: 2rem;
-        display: grid;
-        grid-template-columns:repeat(1, 1fr);
-        gap: 2rem;
-    }
-
     .footer .box-container .box{
         width: calc(48%);
+    }
+
+    .footer .box-container .box img{
+        display: none;
     }
 
 }
