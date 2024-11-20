@@ -35,52 +35,73 @@
         </div>
 
         <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="A.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h4>Hand Boquet Tipe A</h4>
-                </div>
-            </div>
+            
+            <ul id="id01">
+                <li>
+                    <div class="box">
+                        <div class="image">
+                            <img src="A.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h4>Hand Boquet Tipe A</h4>
+                            <p>15.000</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <div class="image">
+                            <img src="B.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h4>Hand Boquet Tipe B</h4>
+                            <p>14.000</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <div class="image">
+                            <img src="C.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h4>Hand Boquet Tipe C</h4>
+                            <p>140.000</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <div class="image">
+                            <img src="D.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h4>Hand Boquet Tipe D</h4>
+                            <p>500.000</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <div class="image">
+                            <img src="handboquet.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h4>Hand Boquet Tipe E</h4>
+                            <p>250.000</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
 
-            <div class="box">
-                <div class="image">
-                    <img src="B.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h4>Hand Boquet Tipe B</h4>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="C.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h4>Hand Boquet Tipe C</h4>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="D.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h4>Hand Boquet Tipe D</h4>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="handboquet.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h4>Hand Boquet Tipe E</h4>
-                </div>
-            </div>
+            <select class="form-control" onchange="handleSortChange(this.value)">
+                <option value="">Pilih</option>
+                <option value="sortList">Murah - Mahal</option>
+                <option value="sortListEx">Mahal - Murah</option>
+            </select>
 
         </div>
+
     </section>
 
     <section class="contact" id="contact">
@@ -162,6 +183,44 @@
 
             window.open(url, '_blank').focus();
         }
+    </script>
+    <script>
+        function handleSortChange(value) {
+            if (value === "sortList") {
+                sortList();
+            } else if (value === "sortListEx") {
+                sortListEx();
+            }
+        }
+
+        function sortList() {
+            const list = document.getElementById("id01");
+            const items = Array.from(list.getElementsByTagName("li"));
+        
+            items.sort((a, b) => {
+                const priceA = parseInt(a.querySelector("p").innerText.replace(/\./g, ""), 10);
+                const priceB = parseInt(b.querySelector("p").innerText.replace(/\./g, ""), 10);
+                return priceA - priceB;
+            });
+        
+            // Append sorted items back to the list
+            items.forEach(item => list.appendChild(item));
+        }
+
+        function sortListEx() {
+            const list = document.getElementById("id01");
+            const items = Array.from(list.getElementsByTagName("li"));
+        
+            items.sort((a, b) => {
+                const priceA = parseInt(a.querySelector("p").innerText.replace(/\./g, ""), 10);
+                const priceB = parseInt(b.querySelector("p").innerText.replace(/\./g, ""), 10);
+                return priceB - priceA;
+            });
+        
+            // Append sorted items back to the list
+            items.forEach(item => list.appendChild(item));
+        }
+
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
