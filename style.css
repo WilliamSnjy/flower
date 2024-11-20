@@ -607,7 +607,7 @@ header .icons #menu{
     }
 
     .products .box-container ul li .box{
-        width: calc(48% - 1rem);
+        width: calc(100% - 1rem);
     }
 
     .review{
@@ -673,7 +673,7 @@ header .icons #menu{
     }
 
     .products .box-container ul li .box .image img{
-        height: 30rem;
+        height: 25rem;
     }
 
     .contact .row{
