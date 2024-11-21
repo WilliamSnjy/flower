@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Shop</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <a href="#home" ><img class="logo-img" src="agungflorist.jpg" alt=""></a>
+        <a href="#home" ><img class="logo-img" loading="lazy" src="agungflorist.jpg" alt=""></a>
 
         <nav class="navbar"> 
             <a href="index.html#home" class="active">Beranda</a>
@@ -36,11 +35,17 @@
 
         <div class="box-container">
             
+            <select class="form-control" onchange="handleSortChange(this.value)">
+                <option value="">Pilih</option>
+                <option value="sortList">Murah - Mahal</option>
+                <option value="sortListEx">Mahal - Murah</option>
+            </select>
+
             <ul id="id01">
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="standingsflower/1.000.000(1).jpg" alt="">
+                            <img loading="lazy" src="standingsflower/1.000.000(1).jpg" alt="">
                         </div>
                         <div class="content">
                             <h4>Standings Flower A</h4>
@@ -51,7 +56,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="standingsflower/1.000.000.jpg" alt="">
+                            <img loading="lazy" src="standingsflower/1.000.000.jpg" alt="">
                         </div>
                         <div class="content">
                             <h4>Standings Flower B</h4>
@@ -62,7 +67,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="standingsflower/1.250.000.jpg" alt="">
+                            <img loading="lazy" src="standingsflower/1.250.000.jpg" alt="">
                         </div>
                         <div class="content">
                             <h4>Standings Flower C</h4>
@@ -73,7 +78,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="standingsflower/1.500.000.jpg" alt="">
+                            <img loading="lazy" src="standingsflower/1.500.000.jpg" alt="">
                         </div>
                         <div class="content">
                             <h4>Standings Flower D</h4>
@@ -84,7 +89,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="standingsflower/600.000(1).jpg" alt="">
+                            <img loading="lazy" src="standingsflower/600.000(1).jpg" alt="">
                         </div>
                         <div class="content">
                             <h4>Standings Flower E</h4>
@@ -95,7 +100,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="standingsflower/600.000(2).jpg" alt="">
+                            <img loading="lazy" src="standingsflower/600.000(2).jpg" alt="">
                         </div>
                         <div class="content">
                             <h4>Standings Flower F</h4>
@@ -106,7 +111,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="standingsflower/600.000.jpg" alt="">
+                            <img loading="lazy" src="standingsflower/600.000.jpg" alt="">
                         </div>
                         <div class="content">
                             <h4>Standings Flower G</h4>
@@ -117,7 +122,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="standingsflower/700.000.jpg" alt="">
+                            <img loading="lazy" src="standingsflower/700.000.jpg" alt="">
                         </div>
                         <div class="content">
                             <h4>Standings Flower H</h4>
@@ -126,12 +131,6 @@
                     </div>
                 </li>
             </ul>
-
-            <select class="form-control" onchange="handleSortChange(this.value)">
-                <option value="">Pilih</option>
-                <option value="sortList">Murah - Mahal</option>
-                <option value="sortListEx">Mahal - Murah</option>
-            </select>
 
         </div>
 
@@ -178,7 +177,7 @@
             </div>
 
             <div class="image">
-                <img alt="" src="https://images.unsplash.com/photo-1462524500090-89443873e2b4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGZsb3dlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
+                <img loading="lazy" alt="" src="https://images.unsplash.com/photo-1462524500090-89443873e2b4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGZsb3dlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
             </div>
         </div>
     </section>
@@ -194,7 +193,7 @@
                 </div>
             </div>
             <div class="box">
-                <img src="agungflorist.jpg" alt="">
+                <img loading="lazy" src="agungflorist.jpg" alt="">
             </div>
         </div>
     </section>
@@ -255,7 +254,6 @@
         }
 
     </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

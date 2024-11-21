@@ -63,7 +63,7 @@ section{
 /* header section */
 
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -267,6 +267,10 @@ header .icons #menu{
     background:rgb(244, 231, 225, 0.4);
 }
 
+.products .box-container select{
+    width: 10%;
+}
+
 .products .box-container ul{
     display: flex;
     flex-wrap: wrap;
@@ -276,8 +280,9 @@ header .icons #menu{
 
 .products .box-container{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin: 2rem 0 0 2rem;
 }
 
 .products .box-container ul{
@@ -474,7 +479,7 @@ header .icons #menu{
     box-shadow: 0 .5rem 1.5rem rgba(0, 0,0, .1);;
 }
 
-.contact .row .form input, .contact .row .form textarea{
+.contact .row .form input, .contact .row .form select{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -485,10 +490,6 @@ header .icons #menu{
     font-size: 1.5rem;
     border-radius:.5rem;
     border: .1rem solid black;
-
-}.contact .row .form textarea{
-    height: 15rem;
-    margin-bottom: 1rem;
 }
 
 .contact .row .form .form-group .btnSubmit{

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Shop</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -36,11 +35,17 @@
 
         <div class="box-container">
             
+            <select class="form-control" onchange="handleSortChange(this.value)">
+                <option value="">Pilih</option>
+                <option value="sortList">Murah - Mahal</option>
+                <option value="sortListEx">Mahal - Murah</option>
+            </select>
+
             <ul id="id01">
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="BoardFlower/1.000.000.jpg" alt="">
+                            <img src="BoardFlower/1.000.000.jpg" loading="lazy" alt="">
                         </div>
                         <div class="content">
                             <h4>Board Flower A</h4>
@@ -51,7 +56,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="BoardFlower/1.000.000(2).jpg" alt="">
+                            <img src="BoardFlower/1.000.000(2).jpg" loading="lazy" alt="">
                         </div>
                         <div class="content">
                             <h4>Board Flower B</h4>
@@ -62,7 +67,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="BoardFlower/1.000.000(3).jpg" alt="">
+                            <img src="BoardFlower/1.000.000(3).jpg" loading="lazy" alt="">
                         </div>
                         <div class="content">
                             <h4>Board Flower C</h4>
@@ -73,7 +78,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="BoardFlower/1.000.000(4).jpg" alt="">
+                            <img src="BoardFlower/1.000.000(4).jpg" loading="lazy" alt="">
                         </div>
                         <div class="content">
                             <h4>Board Flower D</h4>
@@ -84,7 +89,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="BoardFlower/1.000.000.jpg" alt="">
+                            <img src="BoardFlower/1.000.000.jpg" loading="lazy" alt="">
                         </div>
                         <div class="content">
                             <h4>Board Flower E</h4>
@@ -95,7 +100,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="BoardFlower/2.500.000.jpg" alt="">
+                            <img src="BoardFlower/2.500.000.jpg" loading="lazy" alt="">
                         </div>
                         <div class="content">
                             <h4>Board Flower F</h4>
@@ -106,7 +111,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="BoardFlower/500.000(1).jpg" alt="">
+                            <img src="BoardFlower/500.000(1).jpg" loading="lazy" alt="">
                         </div>
                         <div class="content">
                             <h4>Board Flower G</h4>
@@ -117,7 +122,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="BoardFlower/500.000.jpg" alt="">
+                            <img src="BoardFlower/500.000.jpg" loading="lazy" alt="">
                         </div>
                         <div class="content">
                             <h4>Board Flower H</h4>
@@ -128,7 +133,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="BoardFlower/750.000(1).jpg" alt="">
+                            <img src="BoardFlower/750.000(1).jpg" loading="lazy" alt="">
                         </div>
                         <div class="content">
                             <h4>Board Flower I</h4>
@@ -139,7 +144,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="BoardFlower/750.000(2).jpg" alt="">
+                            <img src="BoardFlower/750.000(2).jpg" loading="lazy" alt="">
                         </div>
                         <div class="content">
                             <h4>Board Flower J</h4>
@@ -150,7 +155,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="BoardFlower/750.000(3).jpg" alt="">
+                            <img src="BoardFlower/750.000(3).jpg" loading="lazy" alt="">
                         </div>
                         <div class="content">
                             <h4>Board Flower K</h4>
@@ -161,7 +166,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="BoardFlower/750.000(4).jpg" alt="">
+                            <img src="BoardFlower/750.000(4).jpg" loading="lazy" alt="">
                         </div>
                         <div class="content">
                             <h4>Board Flower L</h4>
@@ -172,7 +177,7 @@
                 <li>
                     <div class="box">
                         <div class="image">
-                            <img src="BoardFlower/750.000.jpg" alt="">
+                            <img src="BoardFlower/750.000.jpg" loading="lazy" alt="">
                         </div>
                         <div class="content">
                             <h4>Board Flower M</h4>
@@ -181,12 +186,6 @@
                     </div>
                 </li>
             </ul>
-
-            <select class="form-control" onchange="handleSortChange(this.value)">
-                <option value="">Pilih</option>
-                <option value="sortList">Murah - Mahal</option>
-                <option value="sortListEx">Mahal - Murah</option>
-            </select>
 
         </div>
 
@@ -233,7 +232,7 @@
             </div>
 
             <div class="image">
-                <img alt="" src="https://images.unsplash.com/photo-1462524500090-89443873e2b4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGZsb3dlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
+                <img alt="" loading="lazy" src="https://images.unsplash.com/photo-1462524500090-89443873e2b4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGZsb3dlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
             </div>
         </div>
     </section>
@@ -249,7 +248,7 @@
                 </div>
             </div>
             <div class="box">
-                <img src="agungflorist.jpg" alt="">
+                <img loading="lazy" src="agungflorist.jpg" alt="">
             </div>
         </div>
     </section>
@@ -310,7 +309,6 @@
         }
 
     </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
