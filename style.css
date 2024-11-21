@@ -274,8 +274,9 @@ header .icons #menu{
 .products .box-container ul{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 2rem;
+    justify-content: center;
     margin-right: 3rem;
+    padding: 0;
 }
 
 .products .box-container{
