@@ -167,6 +167,7 @@ header .icons #menu{
     font-size: 1.5rem;
     margin:0;
     margin-bottom: 1rem;
+    line-height: 1.5rem;
 }
 
 .home .content .btn{
@@ -174,6 +175,7 @@ header .icons #menu{
     color:#000;
     font-weight: 700;
     padding: 0.5rem 3.5rem;
+    text-decoration: none;
 }
 
 .home .content .btn:hover{
@@ -202,8 +204,7 @@ header .icons #menu{
 
 .about .row .image{
     flex: 1 1 45%;
-    background: url("https://images.unsplash.com/photo-1614876753060-0751185c9289?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fGZsb3dlciUyMGJhY2tncm91bmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60") no-repeat;
-    background-size: cover;
+    background: url("buket1.jpg");
     background-position: center;
     display: flex;
     align-items: center;
@@ -219,6 +220,7 @@ header .icons #menu{
     font-size:3rem;
     font-weight: bold;
     text-transform: capitalize;
+    line-height: 4rem;
 
 }
 
@@ -238,7 +240,7 @@ header .icons #menu{
     margin: 0;
     margin-top: 1rem;
     color: rgb(0, 0, 0);
-    line-height: 2;
+    line-height: 3rem;
     margin-bottom: 1rem;
 }
 
@@ -493,10 +495,10 @@ header .icons #menu{
     background: #d4e9c5;
 }
 
-
-
 .contact .row .image{
     flex: 1 1 45%;
+    max-width: 30%;
+    max-height: auto;
 }
 
 .contact .row .image img{
@@ -512,14 +514,13 @@ header .icons #menu{
 
 .footer .box-container{
     padding-left: 2rem;
-    display: grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap: 2rem;
+    display: flex;
 }
 
 .footer .box-container .box{
-    width: calc(40%);
+    width: calc(30%);
     margin-bottom: 1rem;
+    gap: 2rem;
 }
 
 .footer .box-container .box h4{
@@ -546,6 +547,7 @@ header .icons #menu{
 }
 .footer .box img{
     width: 20rem;
+    grid-template-columns: repeat(1);
 }
 
 
